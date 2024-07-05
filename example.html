@@ -41,7 +41,7 @@
           if (err === ERR_HASS_HOST_REQUIRED) {
             authOptions.hassUrl = prompt(
               "What host to connect to?",
-              "http://localhost:8123",
+              "http://localhost:443",
             );
             if (!authOptions.hassUrl) return;
             auth = await getAuth(authOptions);
